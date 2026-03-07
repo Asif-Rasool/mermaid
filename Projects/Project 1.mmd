@@ -1,0 +1,42 @@
+﻿%%{init: { "flowchart": { "curve": "basis", "rankSpacing": 70, "nodeSpacing": 60, "defaultRenderer": "elk" }, "themeVariables": { "fontSize": "18px", "fontFamily": "Arial", "primaryColor": "#f7f7f7", "primaryBorderColor": "#2c3e50", "lineColor": "#e67e22", "edgeLabelBackground": "#ffffff" } }}%%
+flowchart TD
+    Food["Food"]
+
+    Food -->|Liquid base = No| LiquidNo["Not a soup"]
+    LiquidNo --> N1["1. Macaroni and cheese"]
+    LiquidNo --> N2["2. Risotto"]
+    LiquidNo --> N3["3. Mashed potatoes"]
+    LiquidNo --> N4["4. Yogurt with granola"]
+
+    Food -->|Liquid base = Yes| LiquidYes
+
+    LiquidYes -->|Ingredients in liquid = No| IngredientsNo
+    IngredientsNo["Not a soup"] --> N5["5. Chocolate milk"]
+    IngredientsNo --> N6["6. Milkshake"]
+    IngredientsNo --> N7["7. Hot chocolate with marshmallows"]
+
+    LiquidYes -->|Ingredients in liquid = Yes| IngredientsYes
+
+    IngredientsYes -->|Savory meal = No| SavoryNo
+    SavoryNo["Not a soup"] --> N8["8. Hot tea with tea leaves"]
+    SavoryNo --> N9["9. Melted ice cream"]
+    SavoryNo --> N10["10. Rice pudding"]
+    SavoryNo --> N11["11. Iced tea"]
+
+    IngredientsYes -->|Savory meal = Yes| SavoryYes
+
+    SavoryYes --> DishQuestion{Dish, not beverage?}
+
+    DishQuestion -->|No| NotSoupDish["Not a soup"]
+    NotSoupDish --> N12["12. Spaghetti with marinara sauce"]
+    NotSoupDish --> N13["13. Pasta bolognese"]
+
+    DishQuestion -->|Yes| SpoonQuestion{Spoon/bowl?}
+    SpoonQuestion -->|No| NotSoupSpoon["Not a soup"]
+
+    SpoonQuestion -->|Yes| Soup["Soup"]
+    Soup --> N14["14. Borscht"]
+    Soup --> N15["15. Chicken noodle soup"]
+    Soup --> N16["16. Tomato bisque"]
+    Soup --> N17["17. Tomato soup"]
+    Soup --> N18["18. Miso soup"]
