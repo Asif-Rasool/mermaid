@@ -28,11 +28,11 @@ flowchart TD
     SavoryYes --> DishQuestion{Dish, not beverage?}
 
     DishQuestion -->|No| NotSoupDish["Not a soup"]
-    NotSoupDish --> N12["12. Spaghetti with marinara sauce"]
-    NotSoupDish --> N13["13. Pasta bolognese"]
-
+   
     DishQuestion -->|Yes| SpoonQuestion{Spoon/bowl?}
     SpoonQuestion -->|No| NotSoupSpoon["Not a soup"]
+    NotSoupSpoon --> N12["12. Pasta bolognese"]
+    NotSoupSpoon --> N13["13. Spaghetti with marinara sauce"]
 
     SpoonQuestion -->|Yes| Soup["Soup"]
     Soup --> N14["14. Borscht"]
