@@ -1,0 +1,340 @@
+{
+  "metadata": {
+    "target": "method:ArcAgent.py:443",
+    "root": "C:\\Users\\asifr\\OneDrive\\Documents\\GitHub\\ARC-AGI\\ArcAgi_StarterCode_v1.3.0",
+    "language": "python",
+    "max_files": 12,
+    "max_symbols_per_file": 18,
+    "max_outgoing_calls": 12,
+    "max_total_edges": 220
+  },
+  "nodes": [
+    {
+      "id": "repo:ArcAgent",
+      "label": "ArcAgent",
+      "kind": "repo"
+    },
+    {
+      "id": "file:ArcAgent.py",
+      "label": "ArcAgent.py",
+      "kind": "file",
+      "parent_id": "repo:ArcAgent"
+    },
+    {
+      "id": "function:ArcAgent.py:1",
+      "label": "_mode_color",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 8
+    },
+    {
+      "id": "function:ArcAgent.py:2",
+      "label": "_count_components",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 13
+    },
+    {
+      "id": "function:ArcAgent.py:3",
+      "label": "neighbors",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 18
+    },
+    {
+      "id": "function:ArcAgent.py:4",
+      "label": "_connected_components_by_color",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 52
+    },
+    {
+      "id": "function:ArcAgent.py:5",
+      "label": "neighbors",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 57
+    },
+    {
+      "id": "function:ArcAgent.py:6",
+      "label": "_connected_non_bg_regions",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 102
+    },
+    {
+      "id": "function:ArcAgent.py:7",
+      "label": "neighbors",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 107
+    },
+    {
+      "id": "function:ArcAgent.py:8",
+      "label": "_component_has_cycle",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 149
+    },
+    {
+      "id": "function:ArcAgent.py:9",
+      "label": "_find_anchor_rectangle",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 160
+    },
+    {
+      "id": "function:ArcAgent.py:10",
+      "label": "_uniform_separator_axes",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 199
+    },
+    {
+      "id": "function:ArcAgent.py:11",
+      "label": "_non_bg_bbox_shape",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 216
+    },
+    {
+      "id": "function:ArcAgent.py:12",
+      "label": "_grid_density",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 223
+    },
+    {
+      "id": "function:ArcAgent.py:13",
+      "label": "_color_role_signature",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 227
+    },
+    {
+      "id": "function:ArcAgent.py:14",
+      "label": "_bresenham_line",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 232
+    },
+    {
+      "id": "function:ArcAgent.py:15",
+      "label": "_nonzero_colors",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 257
+    },
+    {
+      "id": "function:ArcAgent.py:16",
+      "label": "_diff_added_colors",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 261
+    },
+    {
+      "id": "function:ArcAgent.py:17",
+      "label": "_infer_single_marker_roles",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 265
+    },
+    {
+      "id": "function:ArcAgent.py:18",
+      "label": "_infer_double_marker_roles",
+      "kind": "function",
+      "file_id": "file:ArcAgent.py",
+      "parent_id": "file:ArcAgent.py",
+      "lineno": 289
+    },
+    {
+      "id": "note:file:ArcAgent.py:symbols-overflow",
+      "label": "425 more symbol(s)",
+      "kind": "note",
+      "parent_id": "file:ArcAgent.py",
+      "file_id": "file:ArcAgent.py"
+    }
+  ],
+  "edges": [
+    {
+      "source": "repo:ArcAgent",
+      "target": "file:ArcAgent.py",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:1",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:2",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:3",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:4",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:5",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:6",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:7",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:8",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:9",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:10",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:11",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:12",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:13",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:14",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:15",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:16",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:17",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "function:ArcAgent.py:18",
+      "kind": "contains"
+    },
+    {
+      "source": "file:ArcAgent.py",
+      "target": "note:file:ArcAgent.py:symbols-overflow",
+      "kind": "contains"
+    },
+    {
+      "source": "function:ArcAgent.py:2",
+      "target": "function:ArcAgent.py:7",
+      "kind": "calls"
+    },
+    {
+      "source": "function:ArcAgent.py:4",
+      "target": "function:ArcAgent.py:7",
+      "kind": "calls"
+    },
+    {
+      "source": "function:ArcAgent.py:6",
+      "target": "function:ArcAgent.py:7",
+      "kind": "calls"
+    },
+    {
+      "source": "function:ArcAgent.py:9",
+      "target": "function:ArcAgent.py:4",
+      "kind": "calls"
+    },
+    {
+      "source": "function:ArcAgent.py:17",
+      "target": "function:ArcAgent.py:16",
+      "kind": "calls"
+    },
+    {
+      "source": "function:ArcAgent.py:17",
+      "target": "function:ArcAgent.py:15",
+      "kind": "calls"
+    },
+    {
+      "source": "function:ArcAgent.py:18",
+      "target": "function:ArcAgent.py:14",
+      "kind": "calls"
+    },
+    {
+      "source": "function:ArcAgent.py:18",
+      "target": "function:ArcAgent.py:16",
+      "kind": "calls"
+    },
+    {
+      "source": "function:ArcAgent.py:18",
+      "target": "function:ArcAgent.py:15",
+      "kind": "calls"
+    }
+  ],
+  "warnings": [
+    "ArcAgent.py truncated 425 symbol(s)",
+    "_mode_color has 3 unresolved call(s)",
+    "_count_components has 5 unresolved call(s)",
+    "_connected_components_by_color has 10 unresolved call(s)",
+    "_connected_non_bg_regions has 11 unresolved call(s)",
+    "_component_has_cycle has 2 unresolved call(s)",
+    "_find_anchor_rectangle has 8 unresolved call(s)",
+    "_uniform_separator_axes has 4 unresolved call(s)",
+    "_non_bg_bbox_shape has 6 unresolved call(s)",
+    "_grid_density has 2 unresolved call(s)",
+    "_color_role_signature has 5 unresolved call(s)",
+    "_bresenham_line has 2 unresolved call(s)",
+    "_nonzero_colors has 4 unresolved call(s)",
+    "_diff_added_colors has 4 unresolved call(s)",
+    "_infer_single_marker_roles has 8 unresolved call(s)",
+    "_infer_double_marker_roles has 10 unresolved call(s)"
+  ]
+}

@@ -1,0 +1,67 @@
+%%{init: {
+  "flowchart": {
+    "curve": "basis",
+    "rankSpacing": 70,
+    "nodeSpacing": 35,
+    "htmlLabels": false
+  },
+  "themeVariables": {
+    "fontFamily": "Arial",
+    "fontSize": "16px"
+  }
+}}%%
+flowchart TD
+    n_repo_ArcAgent(["ArcAgent"])
+    subgraph n_cluster_file_ArcAgent_py["ArcAgent.py"]
+        n_file_ArcAgent_py[["ArcAgent.py"]]
+        n_note_file_ArcAgent_py_symbols_overflow["425 more symbol(s)"]
+        n_function_ArcAgent_py_1["_mode_color()"]
+        n_function_ArcAgent_py_2["_count_components()"]
+        n_function_ArcAgent_py_3["neighbors()"]
+        n_function_ArcAgent_py_4["_connected_components_by_color()"]
+        n_function_ArcAgent_py_5["neighbors()"]
+        n_function_ArcAgent_py_6["_connected_non_bg_regions()"]
+        n_function_ArcAgent_py_7["neighbors()"]
+        n_function_ArcAgent_py_8["_component_has_cycle()"]
+        n_function_ArcAgent_py_9["_find_anchor_rectangle()"]
+        n_function_ArcAgent_py_10["_uniform_separator_axes()"]
+        n_function_ArcAgent_py_11["_non_bg_bbox_shape()"]
+        n_function_ArcAgent_py_12["_grid_density()"]
+        n_function_ArcAgent_py_13["_color_role_signature()"]
+        n_function_ArcAgent_py_14["_bresenham_line()"]
+        n_function_ArcAgent_py_15["_nonzero_colors()"]
+        n_function_ArcAgent_py_16["_diff_added_colors()"]
+        n_function_ArcAgent_py_17["_infer_single_marker_roles()"]
+        n_function_ArcAgent_py_18["_infer_double_marker_roles()"]
+    end
+    n_repo_ArcAgent --> n_file_ArcAgent_py
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_1
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_2
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_3
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_4
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_5
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_6
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_7
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_8
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_9
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_10
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_11
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_12
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_13
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_14
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_15
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_16
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_17
+    n_file_ArcAgent_py --> n_function_ArcAgent_py_18
+    n_file_ArcAgent_py --> n_note_file_ArcAgent_py_symbols_overflow
+    n_function_ArcAgent_py_2 -->|calls| n_function_ArcAgent_py_7
+    n_function_ArcAgent_py_4 -->|calls| n_function_ArcAgent_py_7
+    n_function_ArcAgent_py_6 -->|calls| n_function_ArcAgent_py_7
+    n_function_ArcAgent_py_9 -->|calls| n_function_ArcAgent_py_4
+    n_function_ArcAgent_py_17 -->|calls| n_function_ArcAgent_py_16
+    n_function_ArcAgent_py_17 -->|calls| n_function_ArcAgent_py_15
+    n_function_ArcAgent_py_18 -->|calls| n_function_ArcAgent_py_14
+    n_function_ArcAgent_py_18 -->|calls| n_function_ArcAgent_py_16
+    n_function_ArcAgent_py_18 -->|calls| n_function_ArcAgent_py_15
+    n_repo_warnings["Warnings: ArcAgent.py truncated 425 symbol(s) | _mode_color has 3 unresolved call(s) | _count_components has 5 unresolved call(s) | _connected_components_by_color has 10 unresolved call(s) | _connected_non_bg_regions has 11 unresolved call(s) | _component_has_cycle has 2 unresolved call(s)"]
+    n_repo_ArcAgent --> n_repo_warnings

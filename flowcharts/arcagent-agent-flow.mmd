@@ -1,0 +1,55 @@
+flowchart TD
+
+    A["ARC Problem<br/>training pairs + test input"]
+    B["Step 1<br/>Extract structural features<br/>shape, colors, components, density,<br/>separator cues, bbox behavior"]
+    C["Step 2<br/>Retrieve plausible concept families<br/>using feature-based applicability scoring"]
+    D["Step 3<br/>Fit concrete symbolic hypotheses<br/>direct concepts + concept-family variants"]
+    E["Step 4<br/>Validate on training pairs<br/>exact fits, near-miss fits,<br/>training error"]
+    F["Parallel search<br/>bounded symbolic pipelines<br/>crop / swap / color map / rigid transform"]
+    G["Step 5<br/>Rank surviving explanations<br/>frame match + analogy + confidence<br/>training error + complexity"]
+    H["Step 6<br/>Select distinct exact predictions<br/>across concept families"]
+    I{"3 predictions reached?"}
+    J["Generate targeted repairs<br/>for prioritized families"]
+    K{"3 predictions reached?"}
+    L["Add remaining exact predictions<br/>and repair variants if needed"]
+    M{"3 predictions reached?"}
+    N["Use near-miss hypotheses"]
+    O{"Any prediction produced?"}
+    P["Fallback default answer"]
+    Q["Return up to 3 final predictions"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    C --> F
+    E --> G
+    F --> G
+    G --> H
+    H --> I
+    I -- "Yes" --> Q
+    I -- "No" --> J
+    J --> K
+    K -- "Yes" --> Q
+    K -- "No" --> L
+    L --> M
+    M -- "Yes" --> Q
+    M -- "No" --> N
+    N --> O
+    O -- "Yes" --> Q
+    O -- "No" --> P
+    P --> Q
+
+    classDef input fill:#f7f1e3,stroke:#7f6000,color:#111,stroke-width:1px;
+    classDef process fill:#eaf4ff,stroke:#1f5a99,color:#111,stroke-width:1px;
+    classDef rank fill:#eef9f0,stroke:#2c7a3f,color:#111,stroke-width:1px;
+    classDef repair fill:#fff4e8,stroke:#a85d00,color:#111,stroke-width:1px;
+    classDef decision fill:#fbe9f2,stroke:#9c2f67,color:#111,stroke-width:1px;
+    classDef output fill:#f2ecff,stroke:#5c3fa3,color:#111,stroke-width:1px;
+
+    class A input;
+    class B,C,D,E,F process;
+    class G rank;
+    class H,J,L,N,P repair;
+    class I,K,M,O decision;
+    class Q output;
